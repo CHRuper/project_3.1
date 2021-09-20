@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <AnchorPane prefHeight="400.0" prefWidth="650.0">
+      <Rectangle fx:id="rectangle" arcHeight="10.0" arcWidth="10.0" fill="#fff8cd" height="375.0" layoutX="13.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+      <ImageView fx:id="displayImage" fitHeight="215.0" fitWidth="330.0" layoutX="160.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@display.png" />
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+      <Circle fx:id="leftCircle" fill="FIREBRICK" layoutX="103.0" layoutY="298.0" onMouseClicked="#touchCircleL" radius="34.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle fx:id="rightCircle" fill="FIREBRICK" layoutX="533.0" layoutY="298.0" onMouseClicked="#touchCircleR" radius="34.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fx:id="tentacle1" fitHeight="25.0" fitWidth="150.0" layoutX="270.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@tentacle1.final.png" />
+      </ImageView>
+      <ImageView fx:id="tentacle3" fitHeight="150.0" fitWidth="40.0" layoutX="312.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@tentacle3.png" />
+      </ImageView>
+      <ImageView fx:id="tentacle4" fitHeight="60.0" fitWidth="55.0" layoutX="345.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@tentacle4.png" />
+      </ImageView>
+      <ImageView fx:id="tentacle5" fitHeight="50.0" fitWidth="25.0" layoutX="380.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@tentacle5.png" />
+      </ImageView>
+      <ImageView fx:id="tentacle2" fitHeight="150.0" fitWidth="70.0" layoutX="293.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="17.1">
+         <Image url="@tentacle2.png" />
+      </ImageView>
+      <ImageView fitHeight="215.0" fitWidth="315.0" layoutX="160.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@display2.png" />
+      </ImageView>
+      <Label fx:id="labelCount" alignment="BASELINE_RIGHT" layoutX="160.0" layoutY="50.0" prefHeight="25.0" prefWidth="316.0" text="000">
+         <font>
+            <Font name="Apple Color Emoji" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="aquaman3" fitHeight="27.0" fitWidth="27.0" layoutX="240.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@aquaman.png" />
+      </ImageView>
+      <ImageView fx:id="aquaman1" fitHeight="27.0" fitWidth="27.0" layoutX="190.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@aquaman.png" />
+      </ImageView>
+      <ImageView fx:id="aquaman2" fitHeight="27.0" fitWidth="27.0" layoutX="215.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@aquaman.png" />
+      </ImageView>
+      <Label fx:id="labelGame" alignment="CENTER" layoutX="160.0" layoutY="113.0" prefHeight="35.0" prefWidth="314.0" textFill="RED">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+</GridPane>
